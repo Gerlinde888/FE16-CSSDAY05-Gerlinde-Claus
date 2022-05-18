@@ -9,9 +9,8 @@
 
         &:hover {
             color: #888888;
-            // transform: scale(1.5);
-            transition: transform 2s;
             transform: rotate3d(4,0,0,360deg) scale(2);
+            transition: transform 1s;
         }
     }
 }

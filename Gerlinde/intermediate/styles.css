@@ -16,12 +16,12 @@
 
 .nav .nav__item:hover {
   color: #888888;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
   -webkit-transform: rotate3d(4, 0, 0, 360deg) scale(2);
           transform: rotate3d(4, 0, 0, 360deg) scale(2);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 body {
