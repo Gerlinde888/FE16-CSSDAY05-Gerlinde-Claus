@@ -10,14 +10,65 @@
   list-style: none;
   border: 1px solid gray;
   padding: 10px;
+  -webkit-box-shadow: 1px 1px 2px #888888;
+          box-shadow: 1px 1px 2px #888888;
 }
 
 .nav .nav__item:hover {
-  color: red;
+  color: #888888;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: rotate3d(4, 0, 0, 360deg) scale(2);
+          transform: rotate3d(4, 0, 0, 360deg) scale(2);
 }
 
 body {
   background-color: #f00d64;
   color: white;
+}
+
+.btn, .btn-error, .btn-success {
+  border: 0;
+  padding: 10px 25px;
+  color: white;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.hero_img {
+  background-image: url("https://www.pinkspage.com/dist/img/Merch_Opt1.png");
+  height: 25vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+}
+
+.img_galerie {
+  background-color: black;
+}
+
+.img_flex_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img_flex_box_item {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 /*# sourceMappingURL=styles.css.map */
