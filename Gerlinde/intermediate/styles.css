@@ -1,0 +1,23 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav .nav__item {
+  list-style: none;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.nav .nav__item:hover {
+  color: red;
+}
+
+body {
+  background-color: #f00d64;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

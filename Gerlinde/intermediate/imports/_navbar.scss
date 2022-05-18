@@ -1,0 +1,13 @@
+.nav {
+    display:flex;
+    justify-content: space-around;
+    .nav__item {
+        list-style: none;
+        border: 1px solid gray;
+        padding: 10px;
+
+        &:hover {
+            color: $color_red;
+        }
+    }
+}

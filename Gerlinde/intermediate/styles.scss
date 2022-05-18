@@ -1,0 +1,52 @@
+@import "imports/variables";
+@import "imports/navbar";
+
+@mixin circle {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $color_red;
+
+}
+
+body {
+    // background-color: $color_pink;
+    color: white;
+}
+.circle-shape {
+    @include shape (400px, 500px, 10%);
+    border: 10px solid black;
+}
+.circle-shape-1 {
+    @include shape (100px, 200px, 50%);
+    border: 10px solid black;
+}
+.btn {
+    border: 0;
+    padding: 10px 25px;
+    color: white;
+}
+.btn-error {
+   @extend .btn;
+    background-color:  red;
+}
+.btn-success {
+    @extend .btn;
+     background-color:  green;
+ }
+.hero_img {
+    background-image: url(https://www.pinkspage.com/dist/img/bg/PINK.png);
+    height: auto;
+    width: auto;
+}
+.img_galerie{
+    background-color: black;
+}
+.img_flex_box{
+    display: flex;
+    align-items:center;
+}
+.img_flex_box_item{
+    flex-grow: 2;
+}
